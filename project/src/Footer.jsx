@@ -11,14 +11,6 @@ export default function Footer() {
                         <img src="./Logo_Solution_Factory_2.png" alt="La l'e-brairie" width="100" height="100" />
                         <div className="logo_name">La L'e-brairie</div>
                     </div>
-
-                    <div className="media-icons">
-                        <a href="#"><i className="fa fa-facebook-f"></i></a>
-                        <a href="#"><i className="fa fa-twitter"></i></a>
-                        <a href="#"><i className="fa fa-instagram"></i></a>
-                        <a href="#"><i className="fa fa-linkedin"></i></a>
-                        <a href="#"><i className="fa fa-youtube"></i></a>
-                    </div>
                 </div>
 
                 <div className="link-boxes">
@@ -26,7 +18,7 @@ export default function Footer() {
                         <li className="link_name">Company</li>
                         <li><a href="/index-connected">Home</a></li>
                         <li><a href="#">Contact us</a></li>
-                        <li><a href="#">About us</a></li>
+                        <li><a href="apropos">About us</a></li>
                         <li><a href="#">Get started</a></li>
                     </ul>
                     <ul className="box">

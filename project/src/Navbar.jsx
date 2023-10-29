@@ -6,7 +6,7 @@ export default function Navbar() {
     <div>
         <nav>
             <div className="logo">
-                <a href="/index-connected">
+                <a href="/">
                     <img src="./Logo_Solution_Factory_2.png" alt="Logo La l'e-brairie" width="100" height="100" />
                 </a>
             </div>
