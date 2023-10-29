@@ -19,15 +19,14 @@ export default function Navbar() {
                     </button>
                 </form>
             </div>
-
             <ol>
-                <li><a className="titre" href="/e-book">E-book</a></li>
-                <li><a className="titre" href="#">Ouvrage papier</a></li>
+                <li><a className="titre" href="/e-books">E-book</a></li>
+                <li><a className="titre" href="/e-books">Ouvrage papier</a></li>
                 <div className="profile-menu">
                     <li><img src="user.png" className="profile-icon" alt="Image profil" /></li>
-                    <div className="menu">
-                        <a href="">Mon Profil</a>
-                        <a href="">Se Déconnecter</a>
+                    <div class="menu">
+                        <a href="register" >Se créer un compte</a>
+                        <a href="login">Se connecter</a>      
                     </div>
                 </div>
             </ol>

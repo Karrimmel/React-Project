@@ -1,70 +1,38 @@
 import React from 'react';
+import Navbar from './Navbar';
+import Footer from './Footer';
 import './Book.css';
+import './Footer.css';
 
-function BookSection() {
+export default function Book() {
   return (
     <div>
-      <h2 className="titre">Nouveautés</h2>
-      <div className="container">
-        <div className="row">        
-            <article className="card">
-              <img className="card__background" src="./One_piece_tome_1.jpg" alt="One piece tome 1" width="280" />
-              <div className="card__content | flow">
-                <div className="card__content--container | flow">
-                  <h2 className="card__title">One piece</h2>
-                  <p className="card__description"></p>
+        <Navbar />
+        <div class="container">
+            <div class="Book">
+                <img src="./One_piece_tome_1.jpg" alt=""/>
+            </div>
+            <div>
+                <div class="Name">
+                    <div>
+                    <div class="title-and-author">
+                        <p class="title"></p>
+                        <p class="author"></p>
+                    </div>
+                    <div class="rating">
+                        <p class="note">Note : /10</p>
+                    </div>
+                    </div>
+                        <div class="emprunter">
+                            <button id="reserveButton" data-id="{{book.Id_Book}}" type="button">Emprunter</button>
+                        </div>
                 </div>
-                <a href="">
-                  <button className="card__button">Read more</button>
-                </a>
-              </div>
-            </article>
-            <article className="card">
-              <img className="card__background" src="./One_piece_tome_1.jpg" alt="One piece tome 1" width="280" />
-              <div className="card__content | flow">
-                <div className="card__content--container | flow">
-                  <h2 className="card__title">One piece</h2>
-                  <p className="card__description"></p>
+                <div class="resume">
+                    <p></p>
                 </div>
-                <a href="">
-                  <button className="card__button">Read more</button>
-                </a>
-              </div>
-            </article>
-            <article className="card">
-              <img className="card__background" src="./One_piece_tome_1.jpg" alt="One piece tome 1" width="280" />
-              <div className="card__content | flow">
-                <div className="card__content--container | flow">
-                  <h2 className="card__title">One piece</h2>
-                  <p className="card__description"></p>
-                </div>
-                <a href="">
-                  <button className="card__button">Read more</button>
-                </a>
-              </div>
-            </article>
-            <article className="card">
-              <img className="card__background" src="./One_piece_tome_1.jpg" alt="One piece tome 1" width="280" />
-              <div className="card__content | flow">
-                <div className="card__content--container | flow">
-                  <h2 className="card__title">One piece</h2>
-                  <p className="card__description"></p>
-                </div>
-                <a href="">
-                  <button className="card__button">Read more</button>
-                </a>
-              </div>
-            </article>
+            </div>
         </div>
-      </div>
-    </div>
-  );
-}
-
-export default function BookDisplay() {
-  return (
-    <div>
-      <BookSection  title="Nouveautés" />
+        <Footer />
     </div>
   );
 }

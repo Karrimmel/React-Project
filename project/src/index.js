@@ -1,16 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
 import {createBrowserRouter,RouterProvider } from 'react-router-dom';
+import Books from './Books';
+import Book from './Book';
+import E_books from './E-books';
 
 const route = createBrowserRouter([
     {
         path: "/",
-        element: <App />,
+        element: <Books/>,
     },
     {
-        path: "apropos",
-        element: <h1>A propos</h1>
+        path: "book",
+        element: <Book />
+    },
+    {
+        path: "e-books",
+        element: <E_books />
     }
 ])  
 
